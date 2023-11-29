@@ -11,12 +11,17 @@ public class Key
     public const string PACK2 = "game75_pack2";
     public const string PACK3 = "game75_pack3";
     public const string PACK4 = "game75_pack4";
-    
+
     public const string PACK1_REGISTER = "register_game75_pack1";
     public const string PACK2_REGISTER = "register_game75_pack2";
     public const string PACK3_REGISTER = "register_game75_pack3";
     public const string PACK4_REGISTER = "register_game75_pack4";
     public const string PACK5_REGISTER = "register_game75_pack5";
+    public const string PACK6_REGISTER = "register_game75_pack6";
+    public const string PACK7_REGISTER = "register_game75_pack7";
+    public const string PACK8_REGISTER = "register_game75_pack8";
+    public const string PACK9_REGISTER = "register_game75_pack9";
+    public const string PACK10_REGISTER = "register_game75_pack10";
 }
 
 public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
@@ -53,13 +58,18 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
         builder.AddProduct(Key.PACK2, ProductType.Consumable);
         builder.AddProduct(Key.PACK3, ProductType.Consumable);
         builder.AddProduct(Key.PACK4, ProductType.Consumable);
-        
-               
+
+
         builder.AddProduct(Key.PACK1_REGISTER, ProductType.Subscription);
         builder.AddProduct(Key.PACK2_REGISTER, ProductType.Subscription);
         builder.AddProduct(Key.PACK3_REGISTER, ProductType.Subscription);
         builder.AddProduct(Key.PACK4_REGISTER, ProductType.Subscription);
         builder.AddProduct(Key.PACK5_REGISTER, ProductType.Subscription);
+        builder.AddProduct(Key.PACK6_REGISTER, ProductType.Subscription);
+        builder.AddProduct(Key.PACK7_REGISTER, ProductType.Subscription);
+        builder.AddProduct(Key.PACK8_REGISTER, ProductType.Subscription);
+        builder.AddProduct(Key.PACK9_REGISTER, ProductType.Subscription);
+        builder.AddProduct(Key.PACK10_REGISTER, ProductType.Subscription);
         UnityPurchasing.Initialize(this, builder);
     }
 
